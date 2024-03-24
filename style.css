@@ -1,0 +1,448 @@
+body{
+    background: linear-gradient(90deg, rgb(8, 3, 3) 0%, rgb(33, 1, 151) 50%, rgb(69, 127, 252) 100%);
+}
+*{
+    box-sizing: border-box;
+}
+.box img{
+    object-fit: cover;
+    width: 148px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.h1 .col-md-6{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    filter: grayscale(80%);
+}
+.col-md-6 p{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+.col-md-6 .first-text{
+    position: absolute;
+    left: 180px;
+    top:380px;
+    color: #fff;
+    font-size: 80px;
+}
+.col-md-6 .sec-text{
+    position: absolute;
+    left: 320px;
+    top:380px;
+    color: rgb(18, 231, 231);
+    font-size: 80px;
+    overflow: hidden;
+}
+.col-md-6 .text.sec-text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    border-left: 2px solid rgb(18, 231, 231);
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left:100%;
+    }
+    100%{
+        left:0%;
+    }
+}
+.col-md-4 .a{
+    margin: 50px 0;
+    border: 1px solid rgb(255, 0, 157);
+    height: 550px;
+    border-radius: 10px;
+    background: rgb(180,58,58);
+    background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(253,29,29,1) 50%, rgba(252,225,69,1) 100%);
+}
+.col-md-4 .a .box{
+    margin-top: 50px;
+    margin-left: 130px;
+    border: 2px solid #000;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.col-md-4 .a .aguulga p{
+    color: rgb(24, 191, 197);
+    font-size: 20px;
+    margin: 10px 50px;
+}
+.col-md-4 .a .aguulga .abtm{
+    font-size: 25px;
+    color: #ffffff;
+}
+h2{
+    font-size: 300px;
+    color: #fff !important;
+    text-align: center;
+    margin: 0 50px;
+}
+.d1{
+    text-align: left;
+}
+p{
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff7c;
+}
+.hardst p{
+    border-bottom: 3px solid #ffffff7c;
+}
+hr{
+    border: 15px solid #ffffff7c;
+    margin: 0 20px;
+}
+.info{
+    padding: 35px;
+    margin: 0 80px;
+}
+.skills h3{
+    color: aqua;
+}
+.Number-gsrr{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    border: 5px solid rgb(24, 71, 24);
+    border-radius: 20px;
+    background-color: #000000;
+    height: 450px;
+    box-shadow: rgba(226, 37, 37, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.Number-gsrr a{
+    text-decoration: none;
+    color: rgb(24, 71, 24);
+}
+.Number-gsrr img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.Number-gsrr a:hover img{
+    filter: blur(5px);
+    transform: scale(1.1);
+    transition: all .6s;
+}
+.Number-gsrr a:hover .text{
+    filter: opacity(0)
+}
+.Number-gsrr a .hidden{
+    filter: opacity(0);
+}
+.Number-gsrr a:hover .hidden{
+    position: absolute;
+    bottom: 45%;
+    color: rgb(24, 71, 24);
+    transition: all .5s;
+    width: 85%;
+    text-align: center;
+    font-size: 30px;
+    filter: opacity(1)
+}
+.to-do{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    border: 5px solid rgb(224, 238, 35);
+    border-radius: 20px;
+    background-color: #000000;
+    height: 450px;
+    box-shadow: rgba(226, 37, 37, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.to-do a{
+    text-decoration: none;
+    color: rgb(224, 238, 35);
+}
+.to-do img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.to-do a:hover img{
+    filter: blur(5px);
+    transform: scale(1.1);
+    transition: all .6s;
+}
+.to-do a:hover .text{
+    filter: opacity(0)
+}
+.to-do a .hidden{
+    filter: opacity(0);
+}
+.to-do a:hover .hidden{
+    position: absolute;
+    bottom: 45%;
+    color: rgb(224, 238, 35);
+    transition: all .5s;
+    width: 85%;
+    text-align: center;
+    font-size: 30px;
+    filter: opacity(1)
+}
+.wtr{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    border: 5px solid rgb(238, 35, 187);
+    border-radius: 20px;
+    background-color: #000000;
+    height: 450px;
+    box-shadow: rgba(226, 37, 37, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.wtr a{
+    text-decoration: none;
+    color: rgb(238, 35, 187);
+}
+.wtr img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.wtr a:hover img{
+    filter: blur(5px);
+    transform: scale(1.1);
+    transition: all .6s;
+}
+.wtr a:hover .text{
+    filter: opacity(0)
+}
+.wtr a .hidden{
+    filter: opacity(0);
+}
+.wtr a:hover .hidden{
+    position: absolute;
+    bottom: 45%;
+    color: rgb(238, 35, 187);
+    transition: all .5s;
+    width: 85%;
+    text-align: center;
+    font-size: 30px;
+    filter: opacity(1)
+}
+.container .row{
+    margin-top: 50px;
+}
+.bckg{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    border: 5px solid rgb(238, 35, 35);
+    border-radius: 20px;
+    background-color: #000000;
+    height: 450px;
+    box-shadow: rgba(226, 37, 37, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.bckg a{
+    text-decoration: none;
+    color: rgb(238, 35, 35);
+}
+.bckg img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.bckg a:hover img{
+    filter: blur(5px);
+    transform: scale(1.1);
+    transition: all .6s;
+}
+.bckg a:hover .text{
+    filter: opacity(0)
+}
+.bckg a .hidden{
+    filter: opacity(0);
+}
+.bckg a:hover .hidden{
+    position: absolute;
+    bottom: 45%;
+    color: rgb(238, 35, 35);
+    transition: all .5s;
+    width: 85%;
+    text-align: center;
+    font-size: 30px;
+    filter: opacity(1)
+}
+.counter{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    border: 5px solid rgb(40, 26, 235);
+    border-radius: 20px;
+    background-color: #000000;
+    height: 450px;
+    box-shadow: rgba(226, 37, 37, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.counter a{
+    text-decoration: none;
+    color: rgb(40, 26, 235);
+}
+.counter img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.counter a:hover img{
+    filter: blur(5px);
+    transform: scale(1.1);
+    transition: all .6s;
+}
+.counter a:hover .text{
+    filter: opacity(0)
+}
+.counter a .hidden{
+    filter: opacity(0);
+}
+.counter a:hover .hidden{
+    position: absolute;
+    bottom: 45%;
+    color: rgb(40, 26, 235);
+    transition: all .5s;
+    width: 85%;
+    text-align: center;
+    font-size: 30px;
+    filter: opacity(1)
+}
+.bckg{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    border: 5px solid rgb(238, 35, 35);
+    border-radius: 20px;
+    background-color: #000000;
+    height: 450px;
+    box-shadow: rgba(226, 37, 37, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.bckg a{
+    text-decoration: none;
+    color: rgb(238, 35, 35);
+}
+.bckg img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.bckg a:hover img{
+    filter: blur(5px);
+    transform: scale(1.1);
+    transition: all .6s;
+}
+.bckg a:hover .text{
+    filter: opacity(0)
+}
+.bckg a .hidden{
+    filter: opacity(0);
+}
+.bckg a:hover .hidden{
+    position: absolute;
+    bottom: 45%;
+    color: rgb(238, 35, 35);
+    transition: all .5s;
+    width: 85%;
+    text-align: center;
+    font-size: 30px;
+    filter: opacity(1)
+}
+.jnk{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    border: 5px solid rgb(35, 245, 7);
+    border-radius: 20px;
+    background-color: #000000;
+    height: 450px;
+    box-shadow: rgba(226, 37, 37, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.jnk a{
+    text-decoration: none;
+    color: rgb(35, 245, 7);
+}
+.jnk img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.jnk a:hover img{
+    filter: blur(5px);
+    transform: scale(1.1);
+    transition: all .6s;
+}
+.jnk a:hover .text{
+    filter: opacity(0)
+}
+.jnk a .hidden{
+    filter: opacity(0);
+}
+.jnk a:hover .hidden{
+    position: absolute;
+    bottom: 45%;
+    color: rgb(35, 245, 7);
+    transition: all .5s;
+    width: 85%;
+    text-align: center;
+    font-size: 30px;
+    filter: opacity(1)
+}
+.snake{
+    margin-left: 430px;
+    margin-bottom: 25px;
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    width: 500px;
+    padding: 30px;
+    border: 5px solid rgb(35, 245, 7);
+    border-radius: 20px;
+    background-color: #000000;
+    height: 250px;
+    box-shadow: rgba(226, 37, 37, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.snake a{
+    text-decoration: none;
+    color: rgb(35, 245, 7);
+}
+.snake img{
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+}
+.snake a:hover img{
+    filter: blur(5px);
+    transform: scale(1.1);
+    transition: all .6s;
+}
+.snake a:hover .text{
+    filter: opacity(0)
+}
+.snake a .hidden{
+    filter: opacity(0);
+}
+.snake a:hover .hidden{
+    position: absolute;
+    bottom: 45%;
+    color: rgb(35, 245, 7);
+    transition: all .5s;
+    width: 85%;
+    text-align: center;
+    font-size: 30px;
+    filter: opacity(1)
+}
